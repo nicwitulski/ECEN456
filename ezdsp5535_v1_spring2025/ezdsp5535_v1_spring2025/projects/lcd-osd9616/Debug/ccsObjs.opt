@@ -1,0 +1,1 @@
+"./ezdsp5535.obj" "./ezdsp5535_gpio.obj" "./ezdsp5535_i2c.obj" "./ezdsp5535_i2s.obj" "./ezdsp5535_lcd.obj" "./ezdsp5535_led.obj" "./ezdsp5535_sar.obj" "./ezdsp5535_sdcard.obj" "./ezdsp5535_spiflash.obj" "./ezdsp5535_uart.obj" "./main.obj" "./oled_test.obj" "../lnkx.cmd" -l"cslVC5505.lib" -l"rts55x.lib" 

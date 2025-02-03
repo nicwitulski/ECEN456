@@ -1,0 +1,1 @@
+"./hello.obj" "./hellocfg.obj" "./hellocfg_c.obj" -l"./hellocfg.cmd" -l"libc.a" 
