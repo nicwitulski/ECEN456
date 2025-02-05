@@ -3,6 +3,7 @@
 #include "ezdsp5535.h"
 #include "ezdsp5535_i2s.h"
 #include "csl_i2s.h"
+#include "nco.h"
 
 #define AIC3204_I2C_ADDR 0x18
 
@@ -91,20 +92,10 @@ void AIC3204_Init(void)
     EZDSP5535_I2S_init();
 }
 
-void AIC3204_process(void)
+void AIC3204_process(NCO *nco)
 {
-    Int16 data1, data2;
-
-	/* Read 16-bit left channel Data */
-    EZDSP5535_I2S_readLeft(&data1);
-
-    /* Read 16-bit right channel Data */
-    EZDSP5535_I2S_readRight(&data2);
-
-    // process TBD
-
+	Int16 sample = NCO_generate_sample(nco);
     /* Write 16-bit left channel Data */
-    EZDSP5535_I2S_writeLeft(data1);
+    EZDSP5535_I2S_writeLeft(sample);
 
-    /* Write 16-bit right channel Data */
-    EZDSP5535_I2S_writeRight(data2);}
+}

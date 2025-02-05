@@ -41,6 +41,7 @@
 #include "ezdsp5535.h"
 #include "stdint.h"
 #include "aic3204.h"
+#include "nco.h"
 
 
 void StopTest()
@@ -65,10 +66,14 @@ void main( void )
 
     AIC3204_Init();
 
+    NCO nco;
+    float frequency = 500.0;
+    NCO_init(&nco, frequency);
+
 	while(1)
 	{
 		// process samples
-		AIC3204_process();
+		AIC3204_process(&nco);
 	}
 
 }

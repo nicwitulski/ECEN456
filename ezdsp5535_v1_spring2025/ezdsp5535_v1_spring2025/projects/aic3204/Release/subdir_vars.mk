@@ -8,6 +8,9 @@ CMD_SRCS += \
 
 C_SRCS += \
 ../aic3204.c \
+../aic3204_loop_linein.c \
+../aic3204_test.c \
+../aic3204_tone_headphone.c \
 ../ezdsp5535.c \
 ../ezdsp5535_gpio.c \
 ../ezdsp5535_i2c.c \
@@ -19,6 +22,9 @@ C_SRCS += \
 
 OBJS += \
 ./aic3204.obj \
+./aic3204_loop_linein.obj \
+./aic3204_test.obj \
+./aic3204_tone_headphone.obj \
 ./ezdsp5535.obj \
 ./ezdsp5535_gpio.obj \
 ./ezdsp5535_i2c.obj \
@@ -30,6 +36,9 @@ OBJS += \
 
 C_DEPS += \
 ./aic3204.pp \
+./aic3204_loop_linein.pp \
+./aic3204_test.pp \
+./aic3204_tone_headphone.pp \
 ./ezdsp5535.pp \
 ./ezdsp5535_gpio.pp \
 ./ezdsp5535_i2c.pp \
@@ -41,6 +50,9 @@ C_DEPS += \
 
 C_DEPS__QUOTED += \
 "aic3204.pp" \
+"aic3204_loop_linein.pp" \
+"aic3204_test.pp" \
+"aic3204_tone_headphone.pp" \
 "ezdsp5535.pp" \
 "ezdsp5535_gpio.pp" \
 "ezdsp5535_i2c.pp" \
@@ -52,6 +64,9 @@ C_DEPS__QUOTED += \
 
 OBJS__QUOTED += \
 "aic3204.obj" \
+"aic3204_loop_linein.obj" \
+"aic3204_test.obj" \
+"aic3204_tone_headphone.obj" \
 "ezdsp5535.obj" \
 "ezdsp5535_gpio.obj" \
 "ezdsp5535_i2c.obj" \
@@ -62,6 +77,9 @@ OBJS__QUOTED += \
 "nco.obj" 
 
 C_SRCS__QUOTED += \
+"../aic3204_loop_linein.c" \
+"../aic3204_test.c" \
+"../aic3204_tone_headphone.c" \
 "../ezdsp5535.c" \
 "../ezdsp5535_gpio.c" \
 "../ezdsp5535_i2c.c" \
