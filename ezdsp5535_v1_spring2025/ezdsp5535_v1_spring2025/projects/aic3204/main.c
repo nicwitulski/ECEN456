@@ -67,8 +67,8 @@ void main( void )
     AIC3204_Init();
 
     NCO nco;
-    float frequency = 500.0;
-    NCO_init(&nco, frequency);
+    float frequency = 10.0;
+    NCO_init(&nco, (frequency/2.0));
 
 	while(1)
 	{

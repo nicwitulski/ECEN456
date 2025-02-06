@@ -7,7 +7,7 @@
 
 void NCO_init(NCO *nco, float ftone) {
     nco->phase_accumulator = 0;
-    nco->phase_increment = (uint32_t)((ftone * (1ULL << 32)) / SAMPLE_RATE);
+    nco->phase_increment = (uint32_t)((ftone * (1ULL << 32)) / (SAMPLE_RATE));
     int i;
     for (i = 0; i < TABLE_SIZE; i++) {
         nco->sine_table[i] = (int16_t)(32767 * sin((TWO_PI * i) / TABLE_SIZE));

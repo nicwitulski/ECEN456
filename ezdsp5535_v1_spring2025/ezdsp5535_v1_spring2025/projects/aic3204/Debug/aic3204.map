@@ -1,10 +1,10 @@
 ******************************************************************************
               TMS320C55x Linker PC v4.4.1                      
 ******************************************************************************
->> Linked Wed Feb 05 16:25:26 2025
+>> Linked Thu Feb 06 17:14:57 2025
 
 OUTPUT FILE NAME:   <aic3204.out>
-ENTRY POINT SYMBOL: "_c_int00"  address: 0002361f
+ENTRY POINT SYMBOL: "_c_int00"  address: 0002365c
 
 
 MEMORY CONFIGURATION
@@ -14,9 +14,9 @@ MEMORY CONFIGURATION
 ----------------------  --------  ---------  --------  --------  ----  --------
 PAGE 0:
   MMR                   00000000   000000c0  00000000  000000c0  RWIX
-  DARAM0                000000c0   0000ff40  0000311c  0000ce24  RWIX
+  DARAM0                000000c0   0000ff40  00003120  0000ce20  RWIX
   SARAM0                00010000   00010000  00000000  00010000  RWIX
-  SARAM1                00020000   00020000  0000370a  0001c8f6  RWIX
+  SARAM1                00020000   00020000  00003719  0001c8e7  RWIX
   SARAM2                00040000   0000fe00  00000050  0000fdb0  RWIX
   VECS                  0004fe00   00000200  00000100  00000100  RWIX
   PDROM                 00ff8000   00008000  00000000  00008000  R IX
@@ -51,17 +51,17 @@ section   page  orgn(bytes) orgn(words) len(bytes) len(words)   input sections
                  [ 00003158 ]  000018ac          *   00000004                 : exit.obj (.bss)
                  [ 00003160 ]  000018b0          *   00000002   ezdsp5535_i2s.obj (.bss)
 
-.const       0   [ 00003164 ]  000018b2          *   0000003c   
+.const       0   [ 00003164 ]  000018b2          *   0000003e   
                  [ 00003164 ]  000018b2          *   00000014   rts55x_eh.lib : sin.obj (.const)
                  [ 0000318c ]  000018c6          *   0000000a   nco.obj (.const)
                  [ 000031a0 ]  000018d0          *   00000008   rts55x_eh.lib : divd.obj (.const:_initial_approx$1)
                  [ 000031b0 ]  000018d8          *   00000008                 : round.obj (.const)
                  [ 000031c0 ]  000018e0          *   00000006                 : modf.obj (.const)
-                 [ 000031cc ]  000018e6          *   00000004                 : trunc.obj (.const)
-                 [ 000031d4 ]  000018ea          *   00000002   main.obj (.const)
-                 [ 000031d8 ]  000018ec          *   00000002   rts55x_eh.lib : fltlid.obj (.const)
+                 [ 000031cc ]  000018e6          *   00000004   main.obj (.const)
+                 [ 000031d4 ]  000018ea          *   00000004   rts55x_eh.lib : trunc.obj (.const)
+                 [ 000031dc ]  000018ee          *   00000002                 : fltlid.obj (.const)
 
-.text        0     00020000  [ 00010000 ] 0000370a          *   
+.text        0     00020000  [ 00010000 ] 00003719          *   
                    00020000  [ 00010000 ] 00000c3c          *   cslVC5505.lib : csl_i2c.obj (.text)
                    00020c3c  [ 0001061e ] 000009f3          *                 : csl_i2s.obj (.text)
                    0002162f  [ 00010b17+] 0000068d          *                 : csl_gpio.obj (.text)
@@ -91,17 +91,17 @@ section   page  orgn(bytes) orgn(words) len(bytes) len(words)   input sections
                    00023555  [ 00011aaa+] 0000004b          *                 : args_main.obj (.text)
                    000235a0  [ 00011ad0 ] 00000041          *                 : trunc.obj (.text)
                    000235e1  [ 00011af0+] 0000003e          *                 : exit.obj (.text)
-                   0002361f  [ 00011b0f+] 00000034          *                 : boot.obj (.text)
-                   00023653  [ 00011b29+] 0000002e          *   main.obj (.text)
-                   00023681  [ 00011b40+] 0000002a          *   rts55x_eh.lib : fixdi.obj (.text)
-                   000236ab  [ 00011b55+] 00000014          *                 : subd.obj (.text)
-                   000236bf  [ 00011b5f+] 00000013          *                 : lmpy.obj (.text)
-                   000236d2  [ 00011b69 ] 00000012          *                 : _lock.obj (.text)
-                   000236e4  [ 00011b72 ] 00000010          *                 : negd.obj (.text)
-                   000236f4  [ 00011b7a ] 0000000c          *                 : fltid.obj (.text)
-                   00023700  [ 00011b80 ] 00000007          *                 : exit.obj (.text:CIO_breakpoint)
-                   00023707  [ 00011b83+] 00000002          *                 : vectors.obj (.text)
-                   00023709  [ 00011b84 ] 00000001          *   --HOLE-- [fill = 20]
+                   0002361f  [ 00011b0f+] 0000003d          *   main.obj (.text)
+                   0002365c  [ 00011b2e ] 00000034          *   rts55x_eh.lib : boot.obj (.text)
+                   00023690  [ 00011b48 ] 0000002a          *                 : fixdi.obj (.text)
+                   000236ba  [ 00011b5d ] 00000014          *                 : subd.obj (.text)
+                   000236ce  [ 00011b67 ] 00000013          *                 : lmpy.obj (.text)
+                   000236e1  [ 00011b70+] 00000012          *                 : _lock.obj (.text)
+                   000236f3  [ 00011b79+] 00000010          *                 : negd.obj (.text)
+                   00023703  [ 00011b81+] 0000000c          *                 : fltid.obj (.text)
+                   0002370f  [ 00011b87+] 00000007          *                 : exit.obj (.text:CIO_breakpoint)
+                   00023716  [ 00011b8b ] 00000002          *                 : vectors.obj (.text)
+                   00023718  [ 00011b8c ] 00000001          *   --HOLE-- [fill = 20]
 
 .cinit       0   [ 00040000 ]  00020000          *   00000028   
                  [ 00040000 ]  00020000          *   0000000b   rts55x_eh.lib : sin.obj (.cinit)
@@ -125,8 +125,8 @@ byte addr   word addr   name
 ffffffff                .bss
 ffffffff                .data
 ffffffff                .text
-00023701                C$$EXIT
-000236bf                I$$LMPY
+00023710                C$$EXIT
+000236ce                I$$LMPY
 000224fe                _AIC3204_Init
 000226ae                _AIC3204_process
 0002318f                _EZDSP5535_GPIO_getInput
@@ -193,7 +193,7 @@ ffffffff                .text
 00022f07                _NCO_generate_sample
 00022e77                _NCO_init
 0004fe00                _Reset
-00023653                _StopTest
+0002361f                _StopTest
             00001060    __STACK_END
 00002000                __STACK_SIZE
 00001000                __SYSSTACK_SIZE
@@ -216,10 +216,10 @@ ffffffff                ___text__
 00022ff7                __divul
             000018ae    __dtors_ptr
 0002281f                __eqld
-00023681                __fixdi
+00023690                __fixdi
 0002337f                __fixdli
 000231ad                __fixdul
-000236f4                __fltid
+00023703                __fltid
 000233ee                __fltlid
 00023224                __frcmpyd
 0002329a                __frcmpyd_div
@@ -229,29 +229,29 @@ ffffffff                ___text__
             000018a8    __lock
 000226f5                __lssd
 00022c24                __mpyd
-000236bf                __mpyli
-000236e4                __negd
+000236ce                __mpyli
+000236f3                __negd
 000226c1                __neqd
-000236e2                __nop
+000236f1                __nop
 00023455                __nround
-000236da                __register_lock
-000236d2                __register_unlock
+000236e9                __register_lock
+000236e1                __register_unlock
 0002330d                __remul
             00000060    __stack
-000236ab                __subd
+000236ba                __subd
             00001060    __sysstack
 000235a0                __trunc
             000018aa    __unlock
-00023700                _abort
+0002370f                _abort
 00023508                _auto_init
-0002361f                _c_int00
+0002365c                _c_int00
 000235e1                _exit
             00001888    _fsError
             0000188a    _gI2cObj
             000018a6    _hGpio
             000018b0    _hI2s
             0000189a    _i2cHandle
-00023655                _main
+00023621                _main
 00022f38                _modf
             00001889    _ouError
 000222e2                _sin
@@ -376,20 +376,20 @@ byte addr   word addr   name
 00023555                __args_main
 000235a0                __trunc
 000235e1                _exit
-0002361f                _c_int00
-00023653                _StopTest
-00023655                _main
-00023681                __fixdi
-000236ab                __subd
-000236bf                I$$LMPY
-000236bf                __mpyli
-000236d2                __register_unlock
-000236da                __register_lock
-000236e2                __nop
-000236e4                __negd
-000236f4                __fltid
-00023700                _abort
-00023701                C$$EXIT
+0002361f                _StopTest
+00023621                _main
+0002365c                _c_int00
+00023690                __fixdi
+000236ba                __subd
+000236ce                I$$LMPY
+000236ce                __mpyli
+000236e1                __register_unlock
+000236e9                __register_lock
+000236f1                __nop
+000236f3                __negd
+00023703                __fltid
+0002370f                _abort
+00023710                C$$EXIT
             00020000    ___cinit__
             00020000    cinit
 0004fe00                _Reset
