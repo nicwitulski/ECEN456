@@ -15,6 +15,7 @@ C_SRCS += \
 ../ezdsp5535_lcd.c \
 ../ezdsp5535_led.c \
 ../main.c \
+../myfir.c \
 ../nco.c 
 
 OBJS += \
@@ -26,6 +27,7 @@ OBJS += \
 ./ezdsp5535_lcd.obj \
 ./ezdsp5535_led.obj \
 ./main.obj \
+./myfir.obj \
 ./nco.obj 
 
 C_DEPS += \
@@ -37,6 +39,7 @@ C_DEPS += \
 ./ezdsp5535_lcd.pp \
 ./ezdsp5535_led.pp \
 ./main.pp \
+./myfir.pp \
 ./nco.pp 
 
 C_DEPS__QUOTED += \
@@ -48,6 +51,7 @@ C_DEPS__QUOTED += \
 "ezdsp5535_lcd.pp" \
 "ezdsp5535_led.pp" \
 "main.pp" \
+"myfir.pp" \
 "nco.pp" 
 
 OBJS__QUOTED += \
@@ -59,6 +63,7 @@ OBJS__QUOTED += \
 "ezdsp5535_lcd.obj" \
 "ezdsp5535_led.obj" \
 "main.obj" \
+"myfir.obj" \
 "nco.obj" 
 
 C_SRCS__QUOTED += \
@@ -69,6 +74,7 @@ C_SRCS__QUOTED += \
 "../ezdsp5535_lcd.c" \
 "../ezdsp5535_led.c" \
 "../main.c" \
+"../myfir.c" \
 "../nco.c" 
 
 

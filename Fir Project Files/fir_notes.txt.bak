@@ -1,0 +1,55 @@
+
+
+Notes for FIR Project requirements
+
+- Filter comments:
+	- Cutoff at 800 Hz
+	- Blackman window used for small passband ripple with good stopband attenuation
+	- Roughly -6 db in passband ripple
+	- Lowest magnitude of -135 db in stopband
+	- see Magnitude Response w/ values for visualization
+
+- .dat file
+	- See TVI.dat and TVIOut.dat for the intput and output of our filter. 
+	  Use the matlab code, firParameters.m, to visualize comparison
+
+- Reduce Cycles
+	- Could not get intrinsic functions to reduce cycles, only increased them
+	- Lowest amount = 177 cycles to run filter w/ C optimization at level 3 (all 240 samples)
+	- Lowest amount w/o optimization: 2,547
+	- FIR processing time = 2,547 cycles / 86 MHz = 29.62 us
+	- Sample rate period = 1 / 24 kHz = 41.67 us
+	- CPU usage % = (FIR processing time / sample rate period) * 100
+		- (29.62us / 41.67us) * 100 = 71.08% of CPU Usage 
+	- 71.08% of CPU usage. Most likely not real-time if logic to take in samples exceeds 29%.
+	  - If this is the only process, then yes, the filter would be real-time.
+	
+- # cycles for 1 sample
+	- No C Optimization:	2,547 cycles
+	- Level 0:				1,907 cycles
+	- Level 1:				1,902 cycles
+	- Level 2:				180 cycles
+	- Level 3:				177 cycles
+	- FIR processing time = 177 cycles / 86 MHz = 2.06 us
+	- Sample rate period = 1 / 24 kHz = 41.67 us
+	- CPU usage % = (FIR processing time / sample rate period) * 100
+		- (2.06us / 41.67us) * 100 = 4.94% of CPU Usage 
+	- Only 4.94% of CPU usage, so YES, real-time!
+
+- Equation:
+	- At order 59 = 177 cycles
+	- At order 119 = 300 cycles
+	- At order 239 = 540 cycles
+		- From this, an equation can be found to be:
+		- Cycles = 2.02(Order + 1) + 54
+			- Test at order 269. Per Eq, should be around 599 cycles
+			- Order 269 actual = 597
+
+- See graphs. The expected vs actual graphs are very close. From the difference signal,
+  you can see there is a little variation, but the MSE is at 8.798453e-05.
+  
+- Delay: (240 samples * 177 cycles) / 86 MHz = 0.494 ms
+
+- demo
+  
+ 

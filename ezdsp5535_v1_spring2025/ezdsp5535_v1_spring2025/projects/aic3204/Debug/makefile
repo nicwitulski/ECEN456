@@ -18,6 +18,7 @@ ORDERED_OBJS += \
 "./ezdsp5535_lcd.obj" \
 "./ezdsp5535_led.obj" \
 "./main.obj" \
+"./myfir.obj" \
 "./nco.obj" \
 "../lnkx.cmd" \
 $(GEN_CMDS__FLAG) \
@@ -141,15 +142,15 @@ all: aic3204.out
 aic3204.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: C5500 Linker'
-	"C:/ti/ccsv6/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 -g --define=c5535 --diag_warning=225 --ptrdiff_size=16 --memory_model=large -k -z -m"aic3204.map" --stack_size=0x200 --heap_size=0x400 --warn_sections -i"../../lib" -i"..lib”" -i"C:/ti/ccsv6/tools/compiler/c5500_4.4.1/lib" -i"C:/ti/ccsv6/tools/compiler/c5500_4.4.1/include" -i"C:/git/ECEN456/ezdsp5535_v1_spring2025/ezdsp5535_v1_spring2025/lib" -i"C:/git/ECEN456/ezdsp5535_v1_spring2025/ezdsp5535_v1_spring2025/c55xx_csl/ccs_v4.0_examples/cslVC5505/Debug" --reread_libs --xml_link_info="aic3204_linkInfo.xml" --rom_model --sys_stacksize=0x200 -o "aic3204.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv6/tools/compiler/c5500_4.4.1/bin/cl55" -v5515 -g -O2 --define=c5535 --diag_warning=225 --ptrdiff_size=16 --memory_model=large -k -z -m"aic3204.map" --stack_size=0x200 --heap_size=0x400 --warn_sections -i"../../lib" -i"..lib”" -i"C:/ti/ccsv6/tools/compiler/c5500_4.4.1/lib" -i"C:/ti/ccsv6/tools/compiler/c5500_4.4.1/include" -i"C:/git/ECEN456/ezdsp5535_v1_spring2025/ezdsp5535_v1_spring2025/lib" -i"C:/git/ECEN456/ezdsp5535_v1_spring2025/ezdsp5535_v1_spring2025/c55xx_csl/ccs_v4.0_examples/cslVC5505/Debug" --reread_libs --xml_link_info="aic3204_linkInfo.xml" --rom_model --sys_stacksize=0x200 -o "aic3204.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "aic3204.pp" "ezdsp5535.pp" "ezdsp5535_gpio.pp" "ezdsp5535_i2c.pp" "ezdsp5535_i2s.pp" "ezdsp5535_lcd.pp" "ezdsp5535_led.pp" "main.pp" "nco.pp" 
-	-$(RM) "aic3204.obj" "ezdsp5535.obj" "ezdsp5535_gpio.obj" "ezdsp5535_i2c.obj" "ezdsp5535_i2s.obj" "ezdsp5535_lcd.obj" "ezdsp5535_led.obj" "main.obj" "nco.obj" 
+	-$(RM) "aic3204.pp" "ezdsp5535.pp" "ezdsp5535_gpio.pp" "ezdsp5535_i2c.pp" "ezdsp5535_i2s.pp" "ezdsp5535_lcd.pp" "ezdsp5535_led.pp" "main.pp" "myfir.pp" "nco.pp" 
+	-$(RM) "aic3204.obj" "ezdsp5535.obj" "ezdsp5535_gpio.obj" "ezdsp5535_i2c.obj" "ezdsp5535_i2s.obj" "ezdsp5535_lcd.obj" "ezdsp5535_led.obj" "main.obj" "myfir.obj" "nco.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

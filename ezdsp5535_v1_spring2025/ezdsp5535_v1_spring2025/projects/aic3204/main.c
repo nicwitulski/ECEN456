@@ -41,14 +41,6 @@
 #include "ezdsp5535.h"
 #include "stdint.h"
 #include "aic3204.h"
-#include "nco.h"
-
-
-void StopTest()
-{
-    //SW_BREAKPOINT;
-    return;
-}
 
 /*
  *
@@ -66,15 +58,9 @@ void main( void )
 
     AIC3204_Init();
 
-    NCO nco;
-    float frequency = 10.0;
-    NCO_init(&nco, (frequency/2.0));
-
-	while(1)
-	{
-		// process samples
-		AIC3204_process(&nco);
-	}
-
+    while(1)
+    {
+    	AIC3204_process();
+    }
 }
 

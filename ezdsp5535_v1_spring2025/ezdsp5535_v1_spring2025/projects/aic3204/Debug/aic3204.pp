@@ -30,7 +30,7 @@ aic3204.obj: C:/git/ECEN456/ezdsp5535_v1_spring2025/ezdsp5535_v1_spring2025/incl
 aic3204.obj: C:/git/ECEN456/ezdsp5535_v1_spring2025/ezdsp5535_v1_spring2025/c55xx_csl/inc/csl_i2s.h
 aic3204.obj: C:/git/ECEN456/ezdsp5535_v1_spring2025/ezdsp5535_v1_spring2025/c55xx_csl/inc/csl_error.h
 aic3204.obj: C:/git/ECEN456/ezdsp5535_v1_spring2025/ezdsp5535_v1_spring2025/c55xx_csl/inc/csl_types.h
-aic3204.obj: ../nco.h
+aic3204.obj: ../myfir.h
 aic3204.obj: C:/ti/ccsv6/tools/compiler/c5500_4.4.1/include/stdint.h
 
 ../aic3204.c: 
@@ -63,5 +63,5 @@ C:/git/ECEN456/ezdsp5535_v1_spring2025/ezdsp5535_v1_spring2025/include/ezdsp5535
 C:/git/ECEN456/ezdsp5535_v1_spring2025/ezdsp5535_v1_spring2025/c55xx_csl/inc/csl_i2s.h: 
 C:/git/ECEN456/ezdsp5535_v1_spring2025/ezdsp5535_v1_spring2025/c55xx_csl/inc/csl_error.h: 
 C:/git/ECEN456/ezdsp5535_v1_spring2025/ezdsp5535_v1_spring2025/c55xx_csl/inc/csl_types.h: 
-../nco.h: 
+../myfir.h: 
 C:/ti/ccsv6/tools/compiler/c5500_4.4.1/include/stdint.h: 
