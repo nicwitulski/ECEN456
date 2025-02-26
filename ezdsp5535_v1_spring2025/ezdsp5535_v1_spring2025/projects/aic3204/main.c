@@ -63,4 +63,3 @@ void main( void )
     	AIC3204_process();
     }
 }
-

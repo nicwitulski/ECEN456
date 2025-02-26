@@ -1,6 +1,6 @@
 ;*******************************************************************************
 ;* TMS320C55x C/C++ Codegen                                          PC v4.4.1 *
-;* Date/Time created: Tue Feb 25 19:59:02 2025                                 *
+;* Date/Time created: Tue Feb 25 23:00:20 2025                                 *
 ;*******************************************************************************
 	.compiler_opts --hll_source=on --mem_model:code=flat --mem_model:data=large --object_format=coff --silicon_core_3_3 --symdebug:dwarf 
 	.mmregs
@@ -72,274 +72,64 @@ $C$DW$10	.dwtag  DW_TAG_subprogram, DW_AT_name("EZDSP5535_I2C_write")
 _$P$T0$1:
 	.field	0,16			; _$P$T0$1[0] @ 0
 	.field	0,16			; _$P$T0$1[1] @ 16
-	.field	0,16			; _$P$T0$1[2] @ 32
-	.field	0,16			; _$P$T0$1[3] @ 48
-	.field	0,16			; _$P$T0$1[4] @ 64
-	.field	0,16			; _$P$T0$1[5] @ 80
-	.field	0,16			; _$P$T0$1[6] @ 96
-	.field	0,16			; _$P$T0$1[7] @ 112
-	.field	0,16			; _$P$T0$1[8] @ 128
-	.field	0,16			; _$P$T0$1[9] @ 144
-	.field	0,16			; _$P$T0$1[10] @ 160
-	.field	0,16			; _$P$T0$1[11] @ 176
-	.field	0,16			; _$P$T0$1[12] @ 192
-	.field	0,16			; _$P$T0$1[13] @ 208
-	.field	0,16			; _$P$T0$1[14] @ 224
-	.field	0,16			; _$P$T0$1[15] @ 240
-	.field	0,16			; _$P$T0$1[16] @ 256
-	.field	-1,16			; _$P$T0$1[17] @ 272
-	.field	-1,16			; _$P$T0$1[18] @ 288
-	.field	-1,16			; _$P$T0$1[19] @ 304
-	.field	-2,16			; _$P$T0$1[20] @ 320
-	.field	-2,16			; _$P$T0$1[21] @ 336
-	.field	-2,16			; _$P$T0$1[22] @ 352
-	.field	-3,16			; _$P$T0$1[23] @ 368
-	.field	-3,16			; _$P$T0$1[24] @ 384
-	.field	-3,16			; _$P$T0$1[25] @ 400
-	.field	-2,16			; _$P$T0$1[26] @ 416
-	.field	-2,16			; _$P$T0$1[27] @ 432
-	.field	-1,16			; _$P$T0$1[28] @ 448
-	.field	0,16			; _$P$T0$1[29] @ 464
-	.field	1,16			; _$P$T0$1[30] @ 480
-	.field	2,16			; _$P$T0$1[31] @ 496
-	.field	3,16			; _$P$T0$1[32] @ 512
-	.field	4,16			; _$P$T0$1[33] @ 528
-	.field	6,16			; _$P$T0$1[34] @ 544
-	.field	7,16			; _$P$T0$1[35] @ 560
-	.field	8,16			; _$P$T0$1[36] @ 576
-	.field	9,16			; _$P$T0$1[37] @ 592
-	.field	9,16			; _$P$T0$1[38] @ 608
-	.field	9,16			; _$P$T0$1[39] @ 624
-	.field	9,16			; _$P$T0$1[40] @ 640
-	.field	8,16			; _$P$T0$1[41] @ 656
-	.field	6,16			; _$P$T0$1[42] @ 672
-	.field	4,16			; _$P$T0$1[43] @ 688
-	.field	1,16			; _$P$T0$1[44] @ 704
-	.field	-2,16			; _$P$T0$1[45] @ 720
-	.field	-5,16			; _$P$T0$1[46] @ 736
-	.field	-9,16			; _$P$T0$1[47] @ 752
-	.field	-12,16			; _$P$T0$1[48] @ 768
-	.field	-16,16			; _$P$T0$1[49] @ 784
-	.field	-19,16			; _$P$T0$1[50] @ 800
-	.field	-22,16			; _$P$T0$1[51] @ 816
-	.field	-23,16			; _$P$T0$1[52] @ 832
-	.field	-24,16			; _$P$T0$1[53] @ 848
-	.field	-24,16			; _$P$T0$1[54] @ 864
-	.field	-22,16			; _$P$T0$1[55] @ 880
-	.field	-20,16			; _$P$T0$1[56] @ 896
-	.field	-16,16			; _$P$T0$1[57] @ 912
-	.field	-10,16			; _$P$T0$1[58] @ 928
-	.field	-4,16			; _$P$T0$1[59] @ 944
-	.field	4,16			; _$P$T0$1[60] @ 960
-	.field	12,16			; _$P$T0$1[61] @ 976
-	.field	20,16			; _$P$T0$1[62] @ 992
-	.field	29,16			; _$P$T0$1[63] @ 1008
-	.field	36,16			; _$P$T0$1[64] @ 1024
-	.field	43,16			; _$P$T0$1[65] @ 1040
-	.field	48,16			; _$P$T0$1[66] @ 1056
-	.field	52,16			; _$P$T0$1[67] @ 1072
-	.field	54,16			; _$P$T0$1[68] @ 1088
-	.field	52,16			; _$P$T0$1[69] @ 1104
-	.field	49,16			; _$P$T0$1[70] @ 1120
-	.field	42,16			; _$P$T0$1[71] @ 1136
-	.field	33,16			; _$P$T0$1[72] @ 1152
-	.field	21,16			; _$P$T0$1[73] @ 1168
-	.field	8,16			; _$P$T0$1[74] @ 1184
-	.field	-8,16			; _$P$T0$1[75] @ 1200
-	.field	-25,16			; _$P$T0$1[76] @ 1216
-	.field	-42,16			; _$P$T0$1[77] @ 1232
-	.field	-59,16			; _$P$T0$1[78] @ 1248
-	.field	-74,16			; _$P$T0$1[79] @ 1264
-	.field	-88,16			; _$P$T0$1[80] @ 1280
-	.field	-98,16			; _$P$T0$1[81] @ 1296
-	.field	-105,16			; _$P$T0$1[82] @ 1312
-	.field	-107,16			; _$P$T0$1[83] @ 1328
-	.field	-105,16			; _$P$T0$1[84] @ 1344
-	.field	-97,16			; _$P$T0$1[85] @ 1360
-	.field	-84,16			; _$P$T0$1[86] @ 1376
-	.field	-65,16			; _$P$T0$1[87] @ 1392
-	.field	-42,16			; _$P$T0$1[88] @ 1408
-	.field	-15,16			; _$P$T0$1[89] @ 1424
-	.field	16,16			; _$P$T0$1[90] @ 1440
-	.field	48,16			; _$P$T0$1[91] @ 1456
-	.field	81,16			; _$P$T0$1[92] @ 1472
-	.field	113,16			; _$P$T0$1[93] @ 1488
-	.field	143,16			; _$P$T0$1[94] @ 1504
-	.field	169,16			; _$P$T0$1[95] @ 1520
-	.field	189,16			; _$P$T0$1[96] @ 1536
-	.field	202,16			; _$P$T0$1[97] @ 1552
-	.field	206,16			; _$P$T0$1[98] @ 1568
-	.field	202,16			; _$P$T0$1[99] @ 1584
-	.field	187,16			; _$P$T0$1[100] @ 1600
-	.field	161,16			; _$P$T0$1[101] @ 1616
-	.field	126,16			; _$P$T0$1[102] @ 1632
-	.field	82,16			; _$P$T0$1[103] @ 1648
-	.field	29,16			; _$P$T0$1[104] @ 1664
-	.field	-30,16			; _$P$T0$1[105] @ 1680
-	.field	-94,16			; _$P$T0$1[106] @ 1696
-	.field	-160,16			; _$P$T0$1[107] @ 1712
-	.field	-225,16			; _$P$T0$1[108] @ 1728
-	.field	-286,16			; _$P$T0$1[109] @ 1744
-	.field	-340,16			; _$P$T0$1[110] @ 1760
-	.field	-383,16			; _$P$T0$1[111] @ 1776
-	.field	-414,16			; _$P$T0$1[112] @ 1792
-	.field	-428,16			; _$P$T0$1[113] @ 1808
-	.field	-423,16			; _$P$T0$1[114] @ 1824
-	.field	-397,16			; _$P$T0$1[115] @ 1840
-	.field	-349,16			; _$P$T0$1[116] @ 1856
-	.field	-278,16			; _$P$T0$1[117] @ 1872
-	.field	-184,16			; _$P$T0$1[118] @ 1888
-	.field	-67,16			; _$P$T0$1[119] @ 1904
-	.field	72,16			; _$P$T0$1[120] @ 1920
-	.field	229,16			; _$P$T0$1[121] @ 1936
-	.field	403,16			; _$P$T0$1[122] @ 1952
-	.field	589,16			; _$P$T0$1[123] @ 1968
-	.field	784,16			; _$P$T0$1[124] @ 1984
-	.field	983,16			; _$P$T0$1[125] @ 2000
-	.field	1181,16			; _$P$T0$1[126] @ 2016
-	.field	1373,16			; _$P$T0$1[127] @ 2032
-	.field	1555,16			; _$P$T0$1[128] @ 2048
-	.field	1721,16			; _$P$T0$1[129] @ 2064
-	.field	1867,16			; _$P$T0$1[130] @ 2080
-	.field	1989,16			; _$P$T0$1[131] @ 2096
-	.field	2083,16			; _$P$T0$1[132] @ 2112
-	.field	2148,16			; _$P$T0$1[133] @ 2128
-	.field	2181,16			; _$P$T0$1[134] @ 2144
-	.field	2181,16			; _$P$T0$1[135] @ 2160
-	.field	2148,16			; _$P$T0$1[136] @ 2176
-	.field	2083,16			; _$P$T0$1[137] @ 2192
-	.field	1989,16			; _$P$T0$1[138] @ 2208
-	.field	1867,16			; _$P$T0$1[139] @ 2224
-	.field	1721,16			; _$P$T0$1[140] @ 2240
-	.field	1555,16			; _$P$T0$1[141] @ 2256
-	.field	1373,16			; _$P$T0$1[142] @ 2272
-	.field	1181,16			; _$P$T0$1[143] @ 2288
-	.field	983,16			; _$P$T0$1[144] @ 2304
-	.field	784,16			; _$P$T0$1[145] @ 2320
-	.field	589,16			; _$P$T0$1[146] @ 2336
-	.field	403,16			; _$P$T0$1[147] @ 2352
-	.field	229,16			; _$P$T0$1[148] @ 2368
-	.field	72,16			; _$P$T0$1[149] @ 2384
-	.field	-67,16			; _$P$T0$1[150] @ 2400
-	.field	-184,16			; _$P$T0$1[151] @ 2416
-	.field	-278,16			; _$P$T0$1[152] @ 2432
-	.field	-349,16			; _$P$T0$1[153] @ 2448
-	.field	-397,16			; _$P$T0$1[154] @ 2464
-	.field	-423,16			; _$P$T0$1[155] @ 2480
-	.field	-428,16			; _$P$T0$1[156] @ 2496
-	.field	-414,16			; _$P$T0$1[157] @ 2512
-	.field	-383,16			; _$P$T0$1[158] @ 2528
-	.field	-340,16			; _$P$T0$1[159] @ 2544
-	.field	-286,16			; _$P$T0$1[160] @ 2560
-	.field	-225,16			; _$P$T0$1[161] @ 2576
-	.field	-160,16			; _$P$T0$1[162] @ 2592
-	.field	-94,16			; _$P$T0$1[163] @ 2608
-	.field	-30,16			; _$P$T0$1[164] @ 2624
-	.field	29,16			; _$P$T0$1[165] @ 2640
-	.field	82,16			; _$P$T0$1[166] @ 2656
-	.field	126,16			; _$P$T0$1[167] @ 2672
-	.field	161,16			; _$P$T0$1[168] @ 2688
-	.field	187,16			; _$P$T0$1[169] @ 2704
-	.field	202,16			; _$P$T0$1[170] @ 2720
-	.field	206,16			; _$P$T0$1[171] @ 2736
-	.field	202,16			; _$P$T0$1[172] @ 2752
-	.field	189,16			; _$P$T0$1[173] @ 2768
-	.field	169,16			; _$P$T0$1[174] @ 2784
-	.field	143,16			; _$P$T0$1[175] @ 2800
-	.field	113,16			; _$P$T0$1[176] @ 2816
-	.field	81,16			; _$P$T0$1[177] @ 2832
-	.field	48,16			; _$P$T0$1[178] @ 2848
-	.field	16,16			; _$P$T0$1[179] @ 2864
-	.field	-15,16			; _$P$T0$1[180] @ 2880
-	.field	-42,16			; _$P$T0$1[181] @ 2896
-	.field	-65,16			; _$P$T0$1[182] @ 2912
-	.field	-84,16			; _$P$T0$1[183] @ 2928
-	.field	-97,16			; _$P$T0$1[184] @ 2944
-	.field	-105,16			; _$P$T0$1[185] @ 2960
-	.field	-107,16			; _$P$T0$1[186] @ 2976
-	.field	-105,16			; _$P$T0$1[187] @ 2992
-	.field	-98,16			; _$P$T0$1[188] @ 3008
-	.field	-88,16			; _$P$T0$1[189] @ 3024
-	.field	-74,16			; _$P$T0$1[190] @ 3040
-	.field	-59,16			; _$P$T0$1[191] @ 3056
-	.field	-42,16			; _$P$T0$1[192] @ 3072
-	.field	-25,16			; _$P$T0$1[193] @ 3088
-	.field	-8,16			; _$P$T0$1[194] @ 3104
-	.field	8,16			; _$P$T0$1[195] @ 3120
-	.field	21,16			; _$P$T0$1[196] @ 3136
-	.field	33,16			; _$P$T0$1[197] @ 3152
-	.field	42,16			; _$P$T0$1[198] @ 3168
-	.field	49,16			; _$P$T0$1[199] @ 3184
-	.field	52,16			; _$P$T0$1[200] @ 3200
-	.field	54,16			; _$P$T0$1[201] @ 3216
-	.field	52,16			; _$P$T0$1[202] @ 3232
-	.field	48,16			; _$P$T0$1[203] @ 3248
-	.field	43,16			; _$P$T0$1[204] @ 3264
-	.field	36,16			; _$P$T0$1[205] @ 3280
-	.field	29,16			; _$P$T0$1[206] @ 3296
-	.field	20,16			; _$P$T0$1[207] @ 3312
-	.field	12,16			; _$P$T0$1[208] @ 3328
-	.field	4,16			; _$P$T0$1[209] @ 3344
-	.field	-4,16			; _$P$T0$1[210] @ 3360
-	.field	-10,16			; _$P$T0$1[211] @ 3376
-	.field	-16,16			; _$P$T0$1[212] @ 3392
-	.field	-20,16			; _$P$T0$1[213] @ 3408
-	.field	-22,16			; _$P$T0$1[214] @ 3424
-	.field	-24,16			; _$P$T0$1[215] @ 3440
-	.field	-24,16			; _$P$T0$1[216] @ 3456
-	.field	-23,16			; _$P$T0$1[217] @ 3472
-	.field	-22,16			; _$P$T0$1[218] @ 3488
-	.field	-19,16			; _$P$T0$1[219] @ 3504
-	.field	-16,16			; _$P$T0$1[220] @ 3520
-	.field	-12,16			; _$P$T0$1[221] @ 3536
-	.field	-9,16			; _$P$T0$1[222] @ 3552
-	.field	-5,16			; _$P$T0$1[223] @ 3568
-	.field	-2,16			; _$P$T0$1[224] @ 3584
-	.field	1,16			; _$P$T0$1[225] @ 3600
-	.field	4,16			; _$P$T0$1[226] @ 3616
-	.field	6,16			; _$P$T0$1[227] @ 3632
-	.field	8,16			; _$P$T0$1[228] @ 3648
-	.field	9,16			; _$P$T0$1[229] @ 3664
-	.field	9,16			; _$P$T0$1[230] @ 3680
-	.field	9,16			; _$P$T0$1[231] @ 3696
-	.field	9,16			; _$P$T0$1[232] @ 3712
-	.field	8,16			; _$P$T0$1[233] @ 3728
-	.field	7,16			; _$P$T0$1[234] @ 3744
-	.field	6,16			; _$P$T0$1[235] @ 3760
-	.field	4,16			; _$P$T0$1[236] @ 3776
-	.field	3,16			; _$P$T0$1[237] @ 3792
-	.field	2,16			; _$P$T0$1[238] @ 3808
-	.field	1,16			; _$P$T0$1[239] @ 3824
-	.field	0,16			; _$P$T0$1[240] @ 3840
-	.field	-1,16			; _$P$T0$1[241] @ 3856
-	.field	-2,16			; _$P$T0$1[242] @ 3872
-	.field	-2,16			; _$P$T0$1[243] @ 3888
-	.field	-3,16			; _$P$T0$1[244] @ 3904
-	.field	-3,16			; _$P$T0$1[245] @ 3920
-	.field	-3,16			; _$P$T0$1[246] @ 3936
-	.field	-2,16			; _$P$T0$1[247] @ 3952
-	.field	-2,16			; _$P$T0$1[248] @ 3968
-	.field	-2,16			; _$P$T0$1[249] @ 3984
-	.field	-1,16			; _$P$T0$1[250] @ 4000
-	.field	-1,16			; _$P$T0$1[251] @ 4016
-	.field	-1,16			; _$P$T0$1[252] @ 4032
-	.field	0,16			; _$P$T0$1[253] @ 4048
-	.field	0,16			; _$P$T0$1[254] @ 4064
-	.field	0,16			; _$P$T0$1[255] @ 4080
-	.field	0,16			; _$P$T0$1[256] @ 4096
-	.field	0,16			; _$P$T0$1[257] @ 4112
-	.field	0,16			; _$P$T0$1[258] @ 4128
-	.field	0,16			; _$P$T0$1[259] @ 4144
-	.field	0,16			; _$P$T0$1[260] @ 4160
-	.field	0,16			; _$P$T0$1[261] @ 4176
-	.field	0,16			; _$P$T0$1[262] @ 4192
-	.field	0,16			; _$P$T0$1[263] @ 4208
-	.field	0,16			; _$P$T0$1[264] @ 4224
-	.field	0,16			; _$P$T0$1[265] @ 4240
-	.field	0,16			; _$P$T0$1[266] @ 4256
-	.field	0,16			; _$P$T0$1[267] @ 4272
-	.field	0,16			; _$P$T0$1[268] @ 4288
-	.field	0,16			; _$P$T0$1[269] @ 4304
+	.field	-1,16			; _$P$T0$1[2] @ 32
+	.field	-3,16			; _$P$T0$1[3] @ 48
+	.field	-6,16			; _$P$T0$1[4] @ 64
+	.field	-11,16			; _$P$T0$1[5] @ 80
+	.field	-19,16			; _$P$T0$1[6] @ 96
+	.field	-28,16			; _$P$T0$1[7] @ 112
+	.field	-39,16			; _$P$T0$1[8] @ 128
+	.field	-50,16			; _$P$T0$1[9] @ 144
+	.field	-60,16			; _$P$T0$1[10] @ 160
+	.field	-66,16			; _$P$T0$1[11] @ 176
+	.field	-64,16			; _$P$T0$1[12] @ 192
+	.field	-51,16			; _$P$T0$1[13] @ 208
+	.field	-22,16			; _$P$T0$1[14] @ 224
+	.field	27,16			; _$P$T0$1[15] @ 240
+	.field	100,16			; _$P$T0$1[16] @ 256
+	.field	200,16			; _$P$T0$1[17] @ 272
+	.field	328,16			; _$P$T0$1[18] @ 288
+	.field	485,16			; _$P$T0$1[19] @ 304
+	.field	668,16			; _$P$T0$1[20] @ 320
+	.field	873,16			; _$P$T0$1[21] @ 336
+	.field	1093,16			; _$P$T0$1[22] @ 352
+	.field	1319,16			; _$P$T0$1[23] @ 368
+	.field	1541,16			; _$P$T0$1[24] @ 384
+	.field	1748,16			; _$P$T0$1[25] @ 400
+	.field	1930,16			; _$P$T0$1[26] @ 416
+	.field	2077,16			; _$P$T0$1[27] @ 432
+	.field	2179,16			; _$P$T0$1[28] @ 448
+	.field	2232,16			; _$P$T0$1[29] @ 464
+	.field	2232,16			; _$P$T0$1[30] @ 480
+	.field	2179,16			; _$P$T0$1[31] @ 496
+	.field	2077,16			; _$P$T0$1[32] @ 512
+	.field	1930,16			; _$P$T0$1[33] @ 528
+	.field	1748,16			; _$P$T0$1[34] @ 544
+	.field	1541,16			; _$P$T0$1[35] @ 560
+	.field	1319,16			; _$P$T0$1[36] @ 576
+	.field	1093,16			; _$P$T0$1[37] @ 592
+	.field	873,16			; _$P$T0$1[38] @ 608
+	.field	668,16			; _$P$T0$1[39] @ 624
+	.field	485,16			; _$P$T0$1[40] @ 640
+	.field	328,16			; _$P$T0$1[41] @ 656
+	.field	200,16			; _$P$T0$1[42] @ 672
+	.field	100,16			; _$P$T0$1[43] @ 688
+	.field	27,16			; _$P$T0$1[44] @ 704
+	.field	-22,16			; _$P$T0$1[45] @ 720
+	.field	-51,16			; _$P$T0$1[46] @ 736
+	.field	-64,16			; _$P$T0$1[47] @ 752
+	.field	-66,16			; _$P$T0$1[48] @ 768
+	.field	-60,16			; _$P$T0$1[49] @ 784
+	.field	-50,16			; _$P$T0$1[50] @ 800
+	.field	-39,16			; _$P$T0$1[51] @ 816
+	.field	-28,16			; _$P$T0$1[52] @ 832
+	.field	-19,16			; _$P$T0$1[53] @ 848
+	.field	-11,16			; _$P$T0$1[54] @ 864
+	.field	-6,16			; _$P$T0$1[55] @ 880
+	.field	-3,16			; _$P$T0$1[56] @ 896
+	.field	-1,16			; _$P$T0$1[57] @ 912
+	.field	0,16			; _$P$T0$1[58] @ 928
+	.field	0,16			; _$P$T0$1[59] @ 944
 
 $C$DW$11	.dwtag  DW_TAG_variable, DW_AT_name("$P$T0$1")
 	.dwattr $C$DW$11, DW_AT_TI_symbol_name("_$P$T0$1")
@@ -350,126 +140,245 @@ $C$DW$11	.dwtag  DW_TAG_variable, DW_AT_name("$P$T0$1")
 	.align	1
 _$P$T1$2:
 	.field	0,16			; _$P$T1$2[0] @ 0
-	.field	0,16			; _$P$T1$2[1] @ 16
-	.field	0,16			; _$P$T1$2[2] @ 32
-	.field	0,16			; _$P$T1$2[3] @ 48
-	.field	-1,16			; _$P$T1$2[4] @ 64
-	.field	-1,16			; _$P$T1$2[5] @ 80
-	.field	-2,16			; _$P$T1$2[6] @ 96
-	.field	-3,16			; _$P$T1$2[7] @ 112
-	.field	-3,16			; _$P$T1$2[8] @ 128
-	.field	-4,16			; _$P$T1$2[9] @ 144
-	.field	-5,16			; _$P$T1$2[10] @ 160
-	.field	-5,16			; _$P$T1$2[11] @ 176
-	.field	-4,16			; _$P$T1$2[12] @ 192
-	.field	-3,16			; _$P$T1$2[13] @ 208
-	.field	-1,16			; _$P$T1$2[14] @ 224
-	.field	2,16			; _$P$T1$2[15] @ 240
-	.field	6,16			; _$P$T1$2[16] @ 256
-	.field	11,16			; _$P$T1$2[17] @ 272
-	.field	17,16			; _$P$T1$2[18] @ 288
-	.field	24,16			; _$P$T1$2[19] @ 304
-	.field	32,16			; _$P$T1$2[20] @ 320
-	.field	39,16			; _$P$T1$2[21] @ 336
-	.field	46,16			; _$P$T1$2[22] @ 352
-	.field	52,16			; _$P$T1$2[23] @ 368
-	.field	55,16			; _$P$T1$2[24] @ 384
-	.field	55,16			; _$P$T1$2[25] @ 400
-	.field	52,16			; _$P$T1$2[26] @ 416
-	.field	43,16			; _$P$T1$2[27] @ 432
-	.field	30,16			; _$P$T1$2[28] @ 448
-	.field	11,16			; _$P$T1$2[29] @ 464
-	.field	-13,16			; _$P$T1$2[30] @ 480
-	.field	-42,16			; _$P$T1$2[31] @ 496
-	.field	-76,16			; _$P$T1$2[32] @ 512
-	.field	-113,16			; _$P$T1$2[33] @ 528
-	.field	-152,16			; _$P$T1$2[34] @ 544
-	.field	-190,16			; _$P$T1$2[35] @ 560
-	.field	-225,16			; _$P$T1$2[36] @ 576
-	.field	-254,16			; _$P$T1$2[37] @ 592
-	.field	-275,16			; _$P$T1$2[38] @ 608
-	.field	-283,16			; _$P$T1$2[39] @ 624
-	.field	-277,16			; _$P$T1$2[40] @ 640
-	.field	-253,16			; _$P$T1$2[41] @ 656
-	.field	-208,16			; _$P$T1$2[42] @ 672
-	.field	-142,16			; _$P$T1$2[43] @ 688
-	.field	-53,16			; _$P$T1$2[44] @ 704
-	.field	59,16			; _$P$T1$2[45] @ 720
-	.field	193,16			; _$P$T1$2[46] @ 736
-	.field	348,16			; _$P$T1$2[47] @ 752
-	.field	521,16			; _$P$T1$2[48] @ 768
-	.field	708,16			; _$P$T1$2[49] @ 784
-	.field	904,16			; _$P$T1$2[50] @ 800
-	.field	1104,16			; _$P$T1$2[51] @ 816
-	.field	1303,16			; _$P$T1$2[52] @ 832
-	.field	1495,16			; _$P$T1$2[53] @ 848
-	.field	1673,16			; _$P$T1$2[54] @ 864
-	.field	1832,16			; _$P$T1$2[55] @ 880
-	.field	1966,16			; _$P$T1$2[56] @ 896
-	.field	2071,16			; _$P$T1$2[57] @ 912
-	.field	2143,16			; _$P$T1$2[58] @ 928
-	.field	2179,16			; _$P$T1$2[59] @ 944
-	.field	2179,16			; _$P$T1$2[60] @ 960
-	.field	2143,16			; _$P$T1$2[61] @ 976
-	.field	2071,16			; _$P$T1$2[62] @ 992
-	.field	1966,16			; _$P$T1$2[63] @ 1008
-	.field	1832,16			; _$P$T1$2[64] @ 1024
-	.field	1673,16			; _$P$T1$2[65] @ 1040
-	.field	1495,16			; _$P$T1$2[66] @ 1056
-	.field	1303,16			; _$P$T1$2[67] @ 1072
-	.field	1104,16			; _$P$T1$2[68] @ 1088
-	.field	904,16			; _$P$T1$2[69] @ 1104
-	.field	708,16			; _$P$T1$2[70] @ 1120
-	.field	521,16			; _$P$T1$2[71] @ 1136
-	.field	348,16			; _$P$T1$2[72] @ 1152
-	.field	193,16			; _$P$T1$2[73] @ 1168
-	.field	59,16			; _$P$T1$2[74] @ 1184
-	.field	-53,16			; _$P$T1$2[75] @ 1200
-	.field	-142,16			; _$P$T1$2[76] @ 1216
-	.field	-208,16			; _$P$T1$2[77] @ 1232
-	.field	-253,16			; _$P$T1$2[78] @ 1248
-	.field	-277,16			; _$P$T1$2[79] @ 1264
-	.field	-283,16			; _$P$T1$2[80] @ 1280
-	.field	-275,16			; _$P$T1$2[81] @ 1296
-	.field	-254,16			; _$P$T1$2[82] @ 1312
-	.field	-225,16			; _$P$T1$2[83] @ 1328
-	.field	-190,16			; _$P$T1$2[84] @ 1344
-	.field	-152,16			; _$P$T1$2[85] @ 1360
-	.field	-113,16			; _$P$T1$2[86] @ 1376
-	.field	-76,16			; _$P$T1$2[87] @ 1392
-	.field	-42,16			; _$P$T1$2[88] @ 1408
-	.field	-13,16			; _$P$T1$2[89] @ 1424
-	.field	11,16			; _$P$T1$2[90] @ 1440
-	.field	30,16			; _$P$T1$2[91] @ 1456
-	.field	43,16			; _$P$T1$2[92] @ 1472
-	.field	52,16			; _$P$T1$2[93] @ 1488
-	.field	55,16			; _$P$T1$2[94] @ 1504
-	.field	55,16			; _$P$T1$2[95] @ 1520
-	.field	52,16			; _$P$T1$2[96] @ 1536
-	.field	46,16			; _$P$T1$2[97] @ 1552
-	.field	39,16			; _$P$T1$2[98] @ 1568
-	.field	32,16			; _$P$T1$2[99] @ 1584
-	.field	24,16			; _$P$T1$2[100] @ 1600
-	.field	17,16			; _$P$T1$2[101] @ 1616
-	.field	11,16			; _$P$T1$2[102] @ 1632
-	.field	6,16			; _$P$T1$2[103] @ 1648
-	.field	2,16			; _$P$T1$2[104] @ 1664
-	.field	-1,16			; _$P$T1$2[105] @ 1680
-	.field	-3,16			; _$P$T1$2[106] @ 1696
-	.field	-4,16			; _$P$T1$2[107] @ 1712
-	.field	-5,16			; _$P$T1$2[108] @ 1728
-	.field	-5,16			; _$P$T1$2[109] @ 1744
-	.field	-4,16			; _$P$T1$2[110] @ 1760
-	.field	-3,16			; _$P$T1$2[111] @ 1776
-	.field	-3,16			; _$P$T1$2[112] @ 1792
-	.field	-2,16			; _$P$T1$2[113] @ 1808
-	.field	-1,16			; _$P$T1$2[114] @ 1824
-	.field	-1,16			; _$P$T1$2[115] @ 1840
-	.field	0,16			; _$P$T1$2[116] @ 1856
-	.field	0,16			; _$P$T1$2[117] @ 1872
-	.field	0,16			; _$P$T1$2[118] @ 1888
-	.field	0,16			; _$P$T1$2[119] @ 1904
-	.space	1920
+	.field	13961,16			; _$P$T1$2[1] @ 16
+	.field	20981,16			; _$P$T1$2[2] @ 32
+	.field	18164,16			; _$P$T1$2[3] @ 48
+	.field	8334,16			; _$P$T1$2[4] @ 64
+	.field	-1639,16			; _$P$T1$2[5] @ 80
+	.field	-4882,16			; _$P$T1$2[6] @ 96
+	.field	1438,16			; _$P$T1$2[7] @ 112
+	.field	14434,16			; _$P$T1$2[8] @ 128
+	.field	27184,16			; _$P$T1$2[9] @ 144
+	.field	32767,16			; _$P$T1$2[10] @ 160
+	.field	28311,16			; _$P$T1$2[11] @ 176
+	.field	16667,16			; _$P$T1$2[12] @ 192
+	.field	4739,16			; _$P$T1$2[13] @ 208
+	.field	-568,16			; _$P$T1$2[14] @ 224
+	.field	3613,16			; _$P$T1$2[15] @ 240
+	.field	14434,16			; _$P$T1$2[16] @ 256
+	.field	25009,16			; _$P$T1$2[17] @ 272
+	.field	28453,16			; _$P$T1$2[18] @ 288
+	.field	21932,16			; _$P$T1$2[19] @ 304
+	.field	8334,16			; _$P$T1$2[20] @ 320
+	.field	-5407,16			; _$P$T1$2[21] @ 336
+	.field	-12354,16			; _$P$T1$2[22] @ 352
+	.field	-9610,16			; _$P$T1$2[23] @ 368
+	.field	0,16			; _$P$T1$2[24] @ 384
+	.field	9610,16			; _$P$T1$2[25] @ 400
+	.field	12354,16			; _$P$T1$2[26] @ 416
+	.field	5407,16			; _$P$T1$2[27] @ 432
+	.field	-8334,16			; _$P$T1$2[28] @ 448
+	.field	-21932,16			; _$P$T1$2[29] @ 464
+	.field	-28453,16			; _$P$T1$2[30] @ 480
+	.field	-25009,16			; _$P$T1$2[31] @ 496
+	.field	-14434,16			; _$P$T1$2[32] @ 512
+	.field	-3613,16			; _$P$T1$2[33] @ 528
+	.field	568,16			; _$P$T1$2[34] @ 544
+	.field	-4739,16			; _$P$T1$2[35] @ 560
+	.field	-16667,16			; _$P$T1$2[36] @ 576
+	.field	-28311,16			; _$P$T1$2[37] @ 592
+	.field	-32767,16			; _$P$T1$2[38] @ 608
+	.field	-27184,16			; _$P$T1$2[39] @ 624
+	.field	-14434,16			; _$P$T1$2[40] @ 640
+	.field	-1438,16			; _$P$T1$2[41] @ 656
+	.field	4882,16			; _$P$T1$2[42] @ 672
+	.field	1639,16			; _$P$T1$2[43] @ 688
+	.field	-8334,16			; _$P$T1$2[44] @ 704
+	.field	-18164,16			; _$P$T1$2[45] @ 720
+	.field	-20981,16			; _$P$T1$2[46] @ 736
+	.field	-13961,16			; _$P$T1$2[47] @ 752
+	.field	0,16			; _$P$T1$2[48] @ 768
+	.field	13961,16			; _$P$T1$2[49] @ 784
+	.field	20981,16			; _$P$T1$2[50] @ 800
+	.field	18164,16			; _$P$T1$2[51] @ 816
+	.field	8334,16			; _$P$T1$2[52] @ 832
+	.field	-1639,16			; _$P$T1$2[53] @ 848
+	.field	-4882,16			; _$P$T1$2[54] @ 864
+	.field	1438,16			; _$P$T1$2[55] @ 880
+	.field	14434,16			; _$P$T1$2[56] @ 896
+	.field	27184,16			; _$P$T1$2[57] @ 912
+	.field	32767,16			; _$P$T1$2[58] @ 928
+	.field	28311,16			; _$P$T1$2[59] @ 944
+	.field	16667,16			; _$P$T1$2[60] @ 960
+	.field	4739,16			; _$P$T1$2[61] @ 976
+	.field	-568,16			; _$P$T1$2[62] @ 992
+	.field	3613,16			; _$P$T1$2[63] @ 1008
+	.field	14434,16			; _$P$T1$2[64] @ 1024
+	.field	25009,16			; _$P$T1$2[65] @ 1040
+	.field	28453,16			; _$P$T1$2[66] @ 1056
+	.field	21932,16			; _$P$T1$2[67] @ 1072
+	.field	8334,16			; _$P$T1$2[68] @ 1088
+	.field	-5407,16			; _$P$T1$2[69] @ 1104
+	.field	-12354,16			; _$P$T1$2[70] @ 1120
+	.field	-9610,16			; _$P$T1$2[71] @ 1136
+	.field	0,16			; _$P$T1$2[72] @ 1152
+	.field	9610,16			; _$P$T1$2[73] @ 1168
+	.field	12354,16			; _$P$T1$2[74] @ 1184
+	.field	5407,16			; _$P$T1$2[75] @ 1200
+	.field	-8334,16			; _$P$T1$2[76] @ 1216
+	.field	-21932,16			; _$P$T1$2[77] @ 1232
+	.field	-28453,16			; _$P$T1$2[78] @ 1248
+	.field	-25009,16			; _$P$T1$2[79] @ 1264
+	.field	-14434,16			; _$P$T1$2[80] @ 1280
+	.field	-3613,16			; _$P$T1$2[81] @ 1296
+	.field	568,16			; _$P$T1$2[82] @ 1312
+	.field	-4739,16			; _$P$T1$2[83] @ 1328
+	.field	-16667,16			; _$P$T1$2[84] @ 1344
+	.field	-28311,16			; _$P$T1$2[85] @ 1360
+	.field	-32767,16			; _$P$T1$2[86] @ 1376
+	.field	-27184,16			; _$P$T1$2[87] @ 1392
+	.field	-14434,16			; _$P$T1$2[88] @ 1408
+	.field	-1438,16			; _$P$T1$2[89] @ 1424
+	.field	4882,16			; _$P$T1$2[90] @ 1440
+	.field	1639,16			; _$P$T1$2[91] @ 1456
+	.field	-8334,16			; _$P$T1$2[92] @ 1472
+	.field	-18164,16			; _$P$T1$2[93] @ 1488
+	.field	-20981,16			; _$P$T1$2[94] @ 1504
+	.field	-13961,16			; _$P$T1$2[95] @ 1520
+	.field	0,16			; _$P$T1$2[96] @ 1536
+	.field	13961,16			; _$P$T1$2[97] @ 1552
+	.field	20981,16			; _$P$T1$2[98] @ 1568
+	.field	18164,16			; _$P$T1$2[99] @ 1584
+	.field	8334,16			; _$P$T1$2[100] @ 1600
+	.field	-1639,16			; _$P$T1$2[101] @ 1616
+	.field	-4882,16			; _$P$T1$2[102] @ 1632
+	.field	1438,16			; _$P$T1$2[103] @ 1648
+	.field	14434,16			; _$P$T1$2[104] @ 1664
+	.field	27184,16			; _$P$T1$2[105] @ 1680
+	.field	32767,16			; _$P$T1$2[106] @ 1696
+	.field	28311,16			; _$P$T1$2[107] @ 1712
+	.field	16667,16			; _$P$T1$2[108] @ 1728
+	.field	4739,16			; _$P$T1$2[109] @ 1744
+	.field	-568,16			; _$P$T1$2[110] @ 1760
+	.field	3613,16			; _$P$T1$2[111] @ 1776
+	.field	14434,16			; _$P$T1$2[112] @ 1792
+	.field	25009,16			; _$P$T1$2[113] @ 1808
+	.field	28453,16			; _$P$T1$2[114] @ 1824
+	.field	21932,16			; _$P$T1$2[115] @ 1840
+	.field	8334,16			; _$P$T1$2[116] @ 1856
+	.field	-5407,16			; _$P$T1$2[117] @ 1872
+	.field	-12354,16			; _$P$T1$2[118] @ 1888
+	.field	-9610,16			; _$P$T1$2[119] @ 1904
+	.field	0,16			; _$P$T1$2[120] @ 1920
+	.field	9610,16			; _$P$T1$2[121] @ 1936
+	.field	12354,16			; _$P$T1$2[122] @ 1952
+	.field	5407,16			; _$P$T1$2[123] @ 1968
+	.field	-8334,16			; _$P$T1$2[124] @ 1984
+	.field	-21932,16			; _$P$T1$2[125] @ 2000
+	.field	-28453,16			; _$P$T1$2[126] @ 2016
+	.field	-25009,16			; _$P$T1$2[127] @ 2032
+	.field	-14434,16			; _$P$T1$2[128] @ 2048
+	.field	-3613,16			; _$P$T1$2[129] @ 2064
+	.field	568,16			; _$P$T1$2[130] @ 2080
+	.field	-4739,16			; _$P$T1$2[131] @ 2096
+	.field	-16667,16			; _$P$T1$2[132] @ 2112
+	.field	-28311,16			; _$P$T1$2[133] @ 2128
+	.field	-32767,16			; _$P$T1$2[134] @ 2144
+	.field	-27184,16			; _$P$T1$2[135] @ 2160
+	.field	-14434,16			; _$P$T1$2[136] @ 2176
+	.field	-1438,16			; _$P$T1$2[137] @ 2192
+	.field	4882,16			; _$P$T1$2[138] @ 2208
+	.field	1639,16			; _$P$T1$2[139] @ 2224
+	.field	-8334,16			; _$P$T1$2[140] @ 2240
+	.field	-18164,16			; _$P$T1$2[141] @ 2256
+	.field	-20981,16			; _$P$T1$2[142] @ 2272
+	.field	-13961,16			; _$P$T1$2[143] @ 2288
+	.field	0,16			; _$P$T1$2[144] @ 2304
+	.field	13961,16			; _$P$T1$2[145] @ 2320
+	.field	20981,16			; _$P$T1$2[146] @ 2336
+	.field	18164,16			; _$P$T1$2[147] @ 2352
+	.field	8334,16			; _$P$T1$2[148] @ 2368
+	.field	-1639,16			; _$P$T1$2[149] @ 2384
+	.field	-4882,16			; _$P$T1$2[150] @ 2400
+	.field	1438,16			; _$P$T1$2[151] @ 2416
+	.field	14434,16			; _$P$T1$2[152] @ 2432
+	.field	27184,16			; _$P$T1$2[153] @ 2448
+	.field	32767,16			; _$P$T1$2[154] @ 2464
+	.field	28311,16			; _$P$T1$2[155] @ 2480
+	.field	16667,16			; _$P$T1$2[156] @ 2496
+	.field	4739,16			; _$P$T1$2[157] @ 2512
+	.field	-568,16			; _$P$T1$2[158] @ 2528
+	.field	3613,16			; _$P$T1$2[159] @ 2544
+	.field	14434,16			; _$P$T1$2[160] @ 2560
+	.field	25009,16			; _$P$T1$2[161] @ 2576
+	.field	28453,16			; _$P$T1$2[162] @ 2592
+	.field	21932,16			; _$P$T1$2[163] @ 2608
+	.field	8334,16			; _$P$T1$2[164] @ 2624
+	.field	-5407,16			; _$P$T1$2[165] @ 2640
+	.field	-12354,16			; _$P$T1$2[166] @ 2656
+	.field	-9610,16			; _$P$T1$2[167] @ 2672
+	.field	0,16			; _$P$T1$2[168] @ 2688
+	.field	9610,16			; _$P$T1$2[169] @ 2704
+	.field	12354,16			; _$P$T1$2[170] @ 2720
+	.field	5407,16			; _$P$T1$2[171] @ 2736
+	.field	-8334,16			; _$P$T1$2[172] @ 2752
+	.field	-21932,16			; _$P$T1$2[173] @ 2768
+	.field	-28453,16			; _$P$T1$2[174] @ 2784
+	.field	-25009,16			; _$P$T1$2[175] @ 2800
+	.field	-14434,16			; _$P$T1$2[176] @ 2816
+	.field	-3613,16			; _$P$T1$2[177] @ 2832
+	.field	568,16			; _$P$T1$2[178] @ 2848
+	.field	-4739,16			; _$P$T1$2[179] @ 2864
+	.field	-16667,16			; _$P$T1$2[180] @ 2880
+	.field	-28311,16			; _$P$T1$2[181] @ 2896
+	.field	-32767,16			; _$P$T1$2[182] @ 2912
+	.field	-27184,16			; _$P$T1$2[183] @ 2928
+	.field	-14434,16			; _$P$T1$2[184] @ 2944
+	.field	-1438,16			; _$P$T1$2[185] @ 2960
+	.field	4882,16			; _$P$T1$2[186] @ 2976
+	.field	1639,16			; _$P$T1$2[187] @ 2992
+	.field	-8334,16			; _$P$T1$2[188] @ 3008
+	.field	-18164,16			; _$P$T1$2[189] @ 3024
+	.field	-20981,16			; _$P$T1$2[190] @ 3040
+	.field	-13961,16			; _$P$T1$2[191] @ 3056
+	.field	0,16			; _$P$T1$2[192] @ 3072
+	.field	13961,16			; _$P$T1$2[193] @ 3088
+	.field	20981,16			; _$P$T1$2[194] @ 3104
+	.field	18164,16			; _$P$T1$2[195] @ 3120
+	.field	8334,16			; _$P$T1$2[196] @ 3136
+	.field	-1639,16			; _$P$T1$2[197] @ 3152
+	.field	-4882,16			; _$P$T1$2[198] @ 3168
+	.field	1438,16			; _$P$T1$2[199] @ 3184
+	.field	14434,16			; _$P$T1$2[200] @ 3200
+	.field	27184,16			; _$P$T1$2[201] @ 3216
+	.field	32767,16			; _$P$T1$2[202] @ 3232
+	.field	28311,16			; _$P$T1$2[203] @ 3248
+	.field	16667,16			; _$P$T1$2[204] @ 3264
+	.field	4739,16			; _$P$T1$2[205] @ 3280
+	.field	-568,16			; _$P$T1$2[206] @ 3296
+	.field	3613,16			; _$P$T1$2[207] @ 3312
+	.field	14434,16			; _$P$T1$2[208] @ 3328
+	.field	25009,16			; _$P$T1$2[209] @ 3344
+	.field	28453,16			; _$P$T1$2[210] @ 3360
+	.field	21932,16			; _$P$T1$2[211] @ 3376
+	.field	8334,16			; _$P$T1$2[212] @ 3392
+	.field	-5407,16			; _$P$T1$2[213] @ 3408
+	.field	-12354,16			; _$P$T1$2[214] @ 3424
+	.field	-9610,16			; _$P$T1$2[215] @ 3440
+	.field	0,16			; _$P$T1$2[216] @ 3456
+	.field	9610,16			; _$P$T1$2[217] @ 3472
+	.field	12354,16			; _$P$T1$2[218] @ 3488
+	.field	5407,16			; _$P$T1$2[219] @ 3504
+	.field	-8334,16			; _$P$T1$2[220] @ 3520
+	.field	-21932,16			; _$P$T1$2[221] @ 3536
+	.field	-28453,16			; _$P$T1$2[222] @ 3552
+	.field	-25009,16			; _$P$T1$2[223] @ 3568
+	.field	-14434,16			; _$P$T1$2[224] @ 3584
+	.field	-3613,16			; _$P$T1$2[225] @ 3600
+	.field	568,16			; _$P$T1$2[226] @ 3616
+	.field	-4739,16			; _$P$T1$2[227] @ 3632
+	.field	-16667,16			; _$P$T1$2[228] @ 3648
+	.field	-28311,16			; _$P$T1$2[229] @ 3664
+	.field	-32767,16			; _$P$T1$2[230] @ 3680
+	.field	-27184,16			; _$P$T1$2[231] @ 3696
+	.field	-14434,16			; _$P$T1$2[232] @ 3712
+	.field	-1438,16			; _$P$T1$2[233] @ 3728
+	.field	4882,16			; _$P$T1$2[234] @ 3744
+	.field	1639,16			; _$P$T1$2[235] @ 3760
+	.field	-8334,16			; _$P$T1$2[236] @ 3776
+	.field	-18164,16			; _$P$T1$2[237] @ 3792
+	.field	-20981,16			; _$P$T1$2[238] @ 3808
+	.field	-13961,16			; _$P$T1$2[239] @ 3824
 
 $C$DW$12	.dwtag  DW_TAG_variable, DW_AT_name("$P$T1$2")
 	.dwattr $C$DW$12, DW_AT_TI_symbol_name("_$P$T1$2")
@@ -481,7 +390,7 @@ $C$DW$13	.dwtag  DW_TAG_subprogram, DW_AT_name("memset")
 	.dwattr $C$DW$13, DW_AT_type(*$C$DW$T$3)
 	.dwattr $C$DW$13, DW_AT_declaration
 	.dwattr $C$DW$13, DW_AT_external
-;	C:\ti\ccsv6\tools\compiler\c5500_4.4.1\bin\opt55.exe C:\\Users\\Nicholas\\AppData\\Local\\Temp\\371442 C:\\Users\\Nicholas\\AppData\\Local\\Temp\\371444 
+;	C:\ti\ccsv6\tools\compiler\c5500_4.4.1\bin\opt55.exe C:\\Users\\Nicholas\\AppData\\Local\\Temp\\226642 C:\\Users\\Nicholas\\AppData\\Local\\Temp\\226644 
 	.sect	".text"
 	.global	_AIC3204_process
 
@@ -493,7 +402,7 @@ $C$DW$14	.dwtag  DW_TAG_subprogram, DW_AT_name("AIC3204_process")
 	.dwattr $C$DW$14, DW_AT_TI_begin_file("../aic3204.c")
 	.dwattr $C$DW$14, DW_AT_TI_begin_line(0x61)
 	.dwattr $C$DW$14, DW_AT_TI_begin_column(0x06)
-	.dwattr $C$DW$14, DW_AT_TI_max_frame_size(0x402)
+	.dwattr $C$DW$14, DW_AT_TI_max_frame_size(0x25e)
 	.dwpsn	file "../aic3204.c",line 98,column 1,is_stmt,address _AIC3204_process
 
 	.dwfde $C$DW$CIE, _AIC3204_process
@@ -505,9 +414,9 @@ $C$DW$14	.dwtag  DW_TAG_subprogram, DW_AT_name("AIC3204_process")
 ;*                        RDM,FRCT,SMUL                                        *
 ;*   Save On Entry Regs : T2,AR5,AR7,FP                                        *
 ;*   Stack Frame        : Full (Frame Pointer in AR6, w/ debug)                *
-;*   Total Frame Size   : 1026 words                                           *
+;*   Total Frame Size   : 606 words                                            *
 ;*                        (2 return address/alignment)                         *
-;*                        (1020 local values)                                  *
+;*                        (600 local values)                                   *
 ;*                        (4 register save area)                               *
 ;*   Min System Stack   : 4 words                                              *
 ;*******************************************************************************
@@ -532,9 +441,9 @@ _AIC3204_process:
         PSHBOTH XFP
 	.dwcfi	cfa_offset, 5
 	.dwcfi	save_reg_to_mem, 32, -5
-        ADD #-1021, mmap(SP)
+        ADD #-601, mmap(SP)
         AMAR *SP(#0), XFP
-	.dwcfi	cfa_offset, 1026
+	.dwcfi	cfa_offset, 606
 ;* AR5   assigned to $O$U12
 ;* AR7   assigned to $O$U14
 ;* T2    assigned to $O$L1
@@ -545,19 +454,19 @@ $C$DW$15	.dwtag  DW_TAG_variable, DW_AT_name("coeffs")
 $C$DW$16	.dwtag  DW_TAG_variable, DW_AT_name("TVI")
 	.dwattr $C$DW$16, DW_AT_TI_symbol_name("_TVI")
 	.dwattr $C$DW$16, DW_AT_type(*$C$DW$T$55)
-	.dwattr $C$DW$16, DW_AT_location[DW_OP_bregx 0x24 270]
+	.dwattr $C$DW$16, DW_AT_location[DW_OP_bregx 0x24 60]
 $C$DW$17	.dwtag  DW_TAG_variable, DW_AT_name("TVIOut")
 	.dwattr $C$DW$17, DW_AT_TI_symbol_name("_TVIOut")
 	.dwattr $C$DW$17, DW_AT_type(*$C$DW$T$52)
-	.dwattr $C$DW$17, DW_AT_location[DW_OP_bregx 0x24 510]
+	.dwattr $C$DW$17, DW_AT_location[DW_OP_bregx 0x24 300]
 $C$DW$18	.dwtag  DW_TAG_variable, DW_AT_name("delayline")
 	.dwattr $C$DW$18, DW_AT_TI_symbol_name("_delayline")
 	.dwattr $C$DW$18, DW_AT_type(*$C$DW$T$53)
-	.dwattr $C$DW$18, DW_AT_location[DW_OP_bregx 0x24 750]
+	.dwattr $C$DW$18, DW_AT_location[DW_OP_bregx 0x24 540]
 	.dwpsn	file "../aic3204.c",line 99,column 19,is_stmt
         AMOV #_$P$T0$1, XAR3 ; |99| 
 
-        RPT #269  ; |99| 
+        RPT #59   ; |99| 
 ||      AMAR *SP(#0), XAR2
 
                                             ; loop starts ; |99| 
@@ -568,10 +477,11 @@ $C$DW$L$_AIC3204_process$2$B:
 $C$DW$L$_AIC3204_process$2$E:
 $C$L2:    
 	.dwpsn	file "../aic3204.c",line 100,column 19,is_stmt
-        AMAR *SP(#0), XAR2
         AMOV #_$P$T1$2, XAR3 ; |100| 
-        AMAR *+AR2(#270)
+
         RPT #239  ; |100| 
+||      AMAR *SP(#60), XAR2
+
                                             ; loop starts ; |100| 
 $C$L3:    
 $C$DW$L$_AIC3204_process$4$B:
@@ -581,8 +491,8 @@ $C$DW$L$_AIC3204_process$4$E:
 $C$L4:    
 	.dwpsn	file "../aic3204.c",line 102,column 13,is_stmt
         AMAR *SP(#0), XAR0
-        MOV #270, T1 ; |102| 
-        AMAR *+AR0(#750)
+        MOV #60, T1 ; |102| 
+        AMAR *+AR0(#540)
 $C$DW$19	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$19, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$19, DW_AT_name("_memset")
@@ -594,9 +504,8 @@ $C$DW$19	.dwtag  DW_TAG_TI_branch
                                         ; call occurs [#_memset] ; |102| 
         MOV #240, T2
         AMAR *SP(#0), XAR5
-        AMAR *SP(#0), XAR7
-        AMAR *+AR5(#510)
-        AMAR *+AR7(#270)
+        AMAR *SP(#60), XAR7
+        AMAR *+AR5(#300)
 $C$L5:    
 $C$DW$L$_AIC3204_process$6$B:
 	.dwpsn	file "../aic3204.c",line 106,column 6,is_stmt
@@ -604,8 +513,8 @@ $C$DW$L$_AIC3204_process$6$B:
         MOV *AR7+, T0 ; |106| 
         AMAR *SP(#0), XAR2
         AMAR *AR5, XAR0
-        MOV #270, T1 ; |106| 
-        AMAR *+AR1(#750)
+        MOV #60, T1 ; |106| 
+        AMAR *+AR1(#540)
 $C$DW$20	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$20, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$20, DW_AT_name("_myfir")
@@ -619,7 +528,7 @@ $C$DW$20	.dwtag  DW_TAG_TI_branch
                                         ; branchcc occurs ; |104| 
 $C$DW$L$_AIC3204_process$6$E:
 	.dwpsn	file "../aic3204.c",line 108,column 1,is_stmt
-        ADD #1021, mmap(SP)
+        ADD #601, mmap(SP)
 	.dwcfi	cfa_offset, 5
         POPBOTH XFP
 	.dwcfi	restore_reg, 32
@@ -640,7 +549,7 @@ $C$DW$21	.dwtag  DW_TAG_TI_branch
                                         ; return occurs
 
 $C$DW$22	.dwtag  DW_TAG_TI_loop
-	.dwattr $C$DW$22, DW_AT_name("C:\git\ECEN456\ezdsp5535_v1_spring2025\ezdsp5535_v1_spring2025\projects\aic3204\Debug\aic3204.asm:$C$L5:1:1740535142")
+	.dwattr $C$DW$22, DW_AT_name("C:\git\ECEN456\ezdsp5535_v1_spring2025\ezdsp5535_v1_spring2025\projects\aic3204\Debug\aic3204.asm:$C$L5:1:1740546020")
 	.dwattr $C$DW$22, DW_AT_TI_begin_file("../aic3204.c")
 	.dwattr $C$DW$22, DW_AT_TI_begin_line(0x68)
 	.dwattr $C$DW$22, DW_AT_TI_end_line(0x6b)
@@ -651,7 +560,7 @@ $C$DW$23	.dwtag  DW_TAG_TI_loop_range
 
 
 $C$DW$24	.dwtag  DW_TAG_TI_loop
-	.dwattr $C$DW$24, DW_AT_name("C:\git\ECEN456\ezdsp5535_v1_spring2025\ezdsp5535_v1_spring2025\projects\aic3204\Debug\aic3204.asm:$C$L3:1:1740535142")
+	.dwattr $C$DW$24, DW_AT_name("C:\git\ECEN456\ezdsp5535_v1_spring2025\ezdsp5535_v1_spring2025\projects\aic3204\Debug\aic3204.asm:$C$L3:1:1740546020")
 	.dwattr $C$DW$24, DW_AT_TI_begin_file("../aic3204.c")
 	.dwattr $C$DW$24, DW_AT_TI_begin_line(0x64)
 	.dwattr $C$DW$24, DW_AT_TI_end_line(0x64)
@@ -662,7 +571,7 @@ $C$DW$25	.dwtag  DW_TAG_TI_loop_range
 
 
 $C$DW$26	.dwtag  DW_TAG_TI_loop
-	.dwattr $C$DW$26, DW_AT_name("C:\git\ECEN456\ezdsp5535_v1_spring2025\ezdsp5535_v1_spring2025\projects\aic3204\Debug\aic3204.asm:$C$L1:1:1740535142")
+	.dwattr $C$DW$26, DW_AT_name("C:\git\ECEN456\ezdsp5535_v1_spring2025\ezdsp5535_v1_spring2025\projects\aic3204\Debug\aic3204.asm:$C$L1:1:1740546020")
 	.dwattr $C$DW$26, DW_AT_TI_begin_file("../aic3204.c")
 	.dwattr $C$DW$26, DW_AT_TI_begin_line(0x63)
 	.dwattr $C$DW$26, DW_AT_TI_end_line(0x63)
@@ -1421,9 +1330,9 @@ $C$DW$92	.dwtag  DW_TAG_subrange_type
 $C$DW$T$53	.dwtag  DW_TAG_array_type
 	.dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$24)
 	.dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$53, DW_AT_byte_size(0x10e)
+	.dwattr $C$DW$T$53, DW_AT_byte_size(0x3c)
 $C$DW$93	.dwtag  DW_TAG_subrange_type
-	.dwattr $C$DW$93, DW_AT_upper_bound(0x10d)
+	.dwattr $C$DW$93, DW_AT_upper_bound(0x3b)
 	.dwendtag $C$DW$T$53
 
 $C$DW$94	.dwtag  DW_TAG_TI_far_type
@@ -1441,9 +1350,9 @@ $C$DW$T$29	.dwtag  DW_TAG_TI_restrict_type
 $C$DW$T$54	.dwtag  DW_TAG_array_type
 	.dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$27)
 	.dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
-	.dwattr $C$DW$T$54, DW_AT_byte_size(0x10e)
+	.dwattr $C$DW$T$54, DW_AT_byte_size(0x3c)
 $C$DW$96	.dwtag  DW_TAG_subrange_type
-	.dwattr $C$DW$96, DW_AT_upper_bound(0x10d)
+	.dwattr $C$DW$96, DW_AT_upper_bound(0x3b)
 	.dwendtag $C$DW$T$54
 
 
